@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Rumon's Blackjack Project </title>
+  <link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- STYLE SWITCHING PART OF THE CODE -->
+    <input type="radio" id="style1" name="style" class="style-radio" checked>
+    <label for="style1" class="style-label">Classic Green</label>
+
+    <input type="radio" id="style2" name="style" class="style-radio">
+    <label for="style2" class="style-label">Dark Mode</label>
+
+    <input type="radio" id="style3" name="style" class="style-radio">
+    <label for="style3" class="style-label">Light Mode</label>
+
+    <!-- BLACKJACK TABLE -->
+    <div class="blackjack-table">
+      <!-- DEALER DIV -->
+      <div class="dealer-section">
+        <h2>Dealer</h2>
+        <div class="dealer-cards">
+          <div class="card-container">
+            <div class="card">
+              <div class="front">?</div>
+              <div class="back">A ♠</div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="front">?</div>
+              <div class="back">K ♥</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLAYER DIV -->
+      <div class="player-section">
+        <h2>Player</h2>
+        <div class="player-cards">
+          <div class="card-container">
+            <div class="card">
+              <div class="front">?</div>
+              <div class="back">10 ♦</div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="front">?</div>
+              <div class="back">9 ♠</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHIPS -->
+        <div class="player-chips">
+          <input type="radio" id="chip-100" name="chip" class="chip-radio" >
+          <label for="chip-100" class="chip chip-100">100</label>
+
+          <input type="radio" id="chip-50" name="chip" class="chip-radio" >
+          <label for="chip-50" class="chip chip-50">50</label>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="actions">
+          <button class="action-btn hit">Hit</button>
+          <button class="action-btn stand">Stand</button>
+          <button class="action-btn double-down">Double Down</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
